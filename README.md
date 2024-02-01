@@ -1,3 +1,1 @@
-End of <b>Unit 1</b>.
-
-Adding this text to check if the workflow works.
+![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/lawful24/sem-demo-labs/main.yml?branch=master)
