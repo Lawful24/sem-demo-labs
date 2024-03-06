@@ -15,6 +15,8 @@ public class AppTest
         app = new App();
     }
 
+    // Tests for printSalaries()
+
     @Test
     void printSalariesTestNull()
     {
@@ -48,5 +50,31 @@ public class AppTest
         emp.salary = 55000;
         employees.add(emp);
         app.printSalaries(employees);
+    }
+
+    // Tests for displayEmployee
+    @Test
+    void displayEmployeeTestNull()
+    {
+        app.displayEmployee(null);
+    }
+
+    @Test
+    void displayEmployeeTestDefault()
+    {
+        Employee emp = new Employee();
+        app.displayEmployee(emp);
+    }
+
+    @Test
+    void displayEmployee()
+    {
+        Employee emp = new Employee();
+        emp.emp_no = 1;
+        emp.first_name = "Kevin";
+        emp.last_name = "Chalmers";
+        emp.title = "Engineer";
+        emp.salary = 55000;
+        app.displayEmployee(emp);
     }
 }
