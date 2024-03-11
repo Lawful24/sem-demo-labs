@@ -46,7 +46,7 @@ jobs:
         uses: codecov/codecov-action@v4.0.1
         with:
           # token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
-          directory: ./target/site/jacoco
+          #directory: ./target/site/jacoco
           flags: Integration Tests # optional
           verbose: true # optional (default = false)
           slug: Lawful24/sem-demo-labs
