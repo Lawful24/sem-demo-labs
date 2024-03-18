@@ -4,6 +4,9 @@ services:
   app:
     build: .
 
+  web:
+    build: web/.
+
   # db is is db folder
   db:
     build: db/.
