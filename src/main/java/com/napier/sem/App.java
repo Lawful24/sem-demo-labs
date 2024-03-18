@@ -24,9 +24,9 @@ public class App{
         App app = new App();
 
         if (args.length < 1) {
-            app.connect("localhost:33060", 0);
+            connect("localhost:33060", 0);
         } else {
-            app.connect(args[0], Integer.parseInt(args[1]));
+            connect(args[0], Integer.parseInt(args[1]));
         }
 
         SpringApplication.run(App.class, args);
